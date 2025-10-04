@@ -20,6 +20,5 @@
 .swiper-slide {
   width: auto; /* biar fleksibel panjang kontennya */
   padding: 20px;
-  background: #ddd;
   border-radius: 8px;
 }
