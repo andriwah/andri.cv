@@ -109,3 +109,4 @@ Ini adalah situs web CV pribadi untuk Andri, menampilkan pengalaman profesional,
 - Radix UI
 - React Router DOM
 - Lucide React (ikon)
+# Test commit untuk link profile
