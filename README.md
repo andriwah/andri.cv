@@ -1,107 +1,111 @@
-# WEB CV Portofolio
+# Andri CV version 2.0.0
 
-Versi: 1.0.0
-
-## Deskripsi
-
-Situs portofolio statis sederhana berisi HTML, CSS, dan JavaScript. Ditujukan untuk menampilkan proyek, skill, dan kontak. Proyek ini menggunakan Tailwind (konfigurasi ada di `tailwind.config.js`) dan asset gambar berada di folder `assets/`.
-
-## Fitur
-
-- Halaman utama statis (`index.html`) dengan styling kustom di `styles.css`.
-- Interaktivitas sederhana di `script.js`.
-- Konfigurasi Tailwind di `tailwind.config.js` (opsional, tergantung workflow pengembangan).
-
-# Portofolio / Portfolio
-
-Versi / Version: 1.0.0
-
----
-
-## Bahasa Indonesia
-
-### Deskripsi
-
-Situs portofolio statis sederhana berisi HTML, CSS, dan JavaScript. Ditujukan untuk menampilkan proyek, keterampilan, dan kontak. Proyek ini menggunakan Tailwind (konfigurasi ada di `tailwind.config.js`) dan aset gambar berada di folder `assets/`.
-
-### Fitur
-
-- Halaman utama statis (`index.html`) dengan styling kustom di `styles.css`.
-- Interaktivitas sederhana di `script.js`.
-- Konfigurasi Tailwind di `tailwind.config.js` (opsional, tergantung workflow pengembangan).
-- Gambar dan ikon di folder `assets/`.
-
-### Struktur proyek
-
-```
-index.html
-script.js
-styles.css
-tailwind.config.js
-assets/
-  (ikon dan gambar)
-```
-
-### Cara menjalankan (preview lokal)
-
-Karena ini adalah situs statis, cara tercepat untuk melihatnya adalah membuka `index.html` di browser:
-
-1. Buka `index.html` secara langsung (double click atau open with browser).
-2. Atau jalankan server statis sederhana (direkomendasikan saat mengembangkan):
-
-   - Menggunakan Python 3 (macOS biasanya sudah terpasang):
-
-     ```bash
-     python3 -m http.server 5173
-     # lalu buka http://localhost:5173 di browser
-     ```
-
-   - Atau menggunakan VS Code + Live Server extension.
-
-Project ini menggunakan lisensi MIT.
-
----
+A modern, responsive personal CV website built with React, TypeScript, and Tailwind CSS.
 
 ## English
 
 ### Description
 
-A simple static portfolio site built with HTML, CSS and JavaScript. It is intended to showcase projects, skills, and contact information. The project optionally uses Tailwind (configuration is in `tailwind.config.js`) and image assets live in the `assets/` folder.
+This is a personal CV website for Andri, showcasing professional experience, skills, education, and certifications in an interactive and visually appealing format.
 
 ### Features
 
-- Static main page (`index.html`) with custom styles in `styles.css`.
-- Small interactive behaviors in `script.js`.
-- Optional Tailwind configuration in `tailwind.config.js` (depends on your development workflow).
-- Images and icons stored in the `assets/` folder.
+- Responsive design that works on all devices
+- Dark/Light theme support
+- Interactive sections for experience, skills, education, and certifications
+- Built with modern React and TypeScript
+- Styled with Tailwind CSS and Radix UI components
 
-### Project structure
+### Installation
 
-```
-index.html
-script.js
-styles.css
-tailwind.config.js
-assets/
-  (icons and images)
-```
+1. Clone the repository:
 
-### How to preview locally
+   ```bash
+   git clone https://github.com/andriwah/andri.cv.git
+   cd andri.cv
+   ```
 
-Because this is a static site, the quickest way to view it is to open `index.html` in your browser:
+2. Install dependencies:
 
-1. Open `index.html` directly (double click or open with browser).
-2. Or run a simple static server (recommended while developing):
+   ```bash
+   pnpm install
+   ```
 
-   - Using Python 3 (macOS usually includes it):
+3. Start the development server:
 
-     ```bash
-     python3 -m http.server 5173
-     # then open http://localhost:5173 in your browser
-     ```
+   ```bash
+   pnpm dev
+   ```
 
-   - Or use VS Code + Live Server extension.
+4. Open your browser and navigate to `http://localhost:5173`
 
-This project is under the MIT License.
+### Usage
 
----
+- Run `pnpm dev` to start the development server
+- Run `pnpm build` to build the project for production
+- Run `pnpm preview` to preview the production build
+- Run `pnpm lint` to run ESLint
+
+### Technologies Used
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI
+- React Router DOM
+- Lucide React (icons)
+
+## Indonesia
+
+### Deskripsi
+
+Ini adalah situs web CV pribadi untuk Andri, menampilkan pengalaman profesional, keterampilan, pendidikan, dan sertifikasi dalam format yang interaktif dan menarik secara visual.
+
+### Fitur
+
+- Desain responsif yang berfungsi di semua perangkat
+- Dukungan tema gelap/terang
+- Bagian interaktif untuk pengalaman, keterampilan, pendidikan, dan sertifikasi
+- Dibangun dengan React dan TypeScript modern
+- Dihias dengan Tailwind CSS dan komponen Radix UI
+
+### Instalasi
+
+1. Kloning repositori:
+
+   ```bash
+   git clone https://github.com/andriwah/andri.cv.git
+   cd andri.cv
+   ```
+
+2. Instal dependensi:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Jalankan server pengembangan:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Buka browser dan navigasi ke `http://localhost:5173`
+
+### Penggunaan
+
+- Jalankan `pnpm dev` untuk memulai server pengembangan
+- Jalankan `pnpm build` untuk membangun proyek untuk produksi
+- Jalankan `pnpm preview` untuk melihat pratinjau build produksi
+- Jalankan `pnpm lint` untuk menjalankan ESLint
+
+### Teknologi yang Digunakan
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI
+- React Router DOM
+- Lucide React (ikon)
