@@ -3,34 +3,37 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main # Jalankan deploy setiap kali ada push ke branch main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Node.js dan aktifkan corepack (untuk PNPM)
+      # 2️⃣ Setup Node.js dan aktifkan corepack
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "pnpm"
 
-      - name: Enable Corepack
-        run: corepack enable
+      # Tambahkan langkah untuk mengaktifkan corepack dan menginstal pnpm
+      - name: Enable and prepare PNPM
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
 
-      # 3️⃣ Install dependencies tanpa frozen lockfile (biar tidak error)
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      # 4️⃣ Build project (jika kamu punya script build di package.json)
+      # 4️⃣ Build project
       - name: Build project
-        run: pnpm run build
+        run: pnpm build
 
       # 5️⃣ Deploy ke Vercel
       - name: Deploy to Vercel
