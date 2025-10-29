@@ -150,6 +150,12 @@ export default function RootLayout() {
       <main>
         <Outlet />
       </main>
+
+      <footer className="bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400 text-center py-2 mt-10">
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} {STRINGS.footerText}
+        </p>
+      </footer>
     </div>
   );
 }

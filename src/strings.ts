@@ -2,6 +2,7 @@ interface Strings {
   siteTitle: string;
   location: string;
   titleNavbar: string;
+  footerText: string;
 }
 
 interface ContactInfo {
@@ -20,6 +21,7 @@ export const STRINGS: Strings = {
   siteTitle: "Andri CV",
   location: "Riau, Indonesia",
   titleNavbar: "ANDRI WAHYUDI",
+  footerText: "Andri Wahyudi. All rights reserved.",
 };
 
 export const CONTACT_INFO: ContactInfo[] = [
